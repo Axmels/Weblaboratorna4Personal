@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" charset="utf-8">
+  <style type="text/css" media="screen">
+    * {
+    margin: 0;
+    padding: 0;
+  }
+  #Navbar1{
+  height: 75px ;
+  background-color: lightblue;
+  display: flex;
+  align-items:center;
+  }
+  .font{
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-indent: 10px;
+  flex-grow: 4;
+  margin: 5px;
+  font-family: italic;
+  text-align: right;
+}
+  #header1{
+      height: 400px;
+      background-image: url(mountains.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  #section1 {
+    margin-left: 100px; /* margin-и використав для простіру навколо */
+    margin-right: 100px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+      height: 800px;
+      background: white;
+  }
+  #yellowparagraph1 {
+      height: 300px;
+      background: white;
+      bottom: 75px;
+      font-style: italic;
+      text-align: center;
+      font-size: 20px;
+  }
+  #p1{
+    text-align: center;
+    font-size: 70px;
+    font-style: italic;
+    margin: 0 auto;
+    color: white;
+  }
+  #p2{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    border-radius: 50px;
+    background-color: lightgreen;
+    width: 200px;
+    height: 60px;
+    margin-left: 850px;
+  }
+  #p2:hover{
+    background-color: grey;
+    cursor: pointer;
+  }
+  .FlexBox{ /* Flexbox надає інструменти для швидкого створення складних, гнучких макетів, та функції, які були складні у традиційних методах CSS. З їх допомогою складно чи неможливо досягти таких простих вимог до макету:
+  Вертикальне вирівнювання блоку всередині батька.
+  Оформлення всіх дітей контейнера так, щоб вони розподілили між собою доступну ширину/висоти незалежно від того, скільки ширини/висоти доступно.
+  Зробити всі колонки в макеті однакової висоти, навіть якщо наповнення в них по-різному. */
+    display: flex; /* flex задає позиціювання блоків в ряд */
+    justify-content: space-between; /* space-between робить однакові відстані між блоками*/
+  }
+  .orangebox-1 { /* class має такуж саму функцію як і id, але відрізняється тим, що допускається вказувати відразу кілька класів, розділяючи їх між собою пробілом */
+      height: 400px;
+      width: 48%;
+      background: url(homyak.jpg);
+  }
+  .orangebox-2
+  {
+      height: 400px;
+      width: 48%;
+      background: url(goverla.jpg);
+  }
+  #homyak{
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    width: 48%;
+  }
+  #goverla{
+    text-align: right;
+    font-size: 20px;
+    font-style: italic;
+  }
+  #PreFooter1 {
+      height: 40px;
+      background: grey;
+      text-align: center;
+      font-style: oblique;
+      font-size: 25px;
+      color: lightgrey;
+  }
+  #footer1 {
+      height: 100px;
+      background: black;
+      text-align: center;
+      font-style: oblique;
+      font-size: 25px;
+      color: lightgrey;
+  }
+  @media screen and (max-width: 500px){
+     #Yellowparagraph1{
+         font-size: 16px;
+     }
+     #container1{
+
+       flex-direction: column;
+       justify-content: center;
+     }
+
+     .Orangebox-1{
+         width: 100%;
+
+     }
+     #MainSection1{
+       margin-bottom: 150px;
+     }
+     #Yellowparagraph1{
+       margin-bottom: 20px;
+     }
+  }
+  </style>
+</head>
+<body>
+  <nav id="Navbar1">
+  <h3>Travel portal</h3>
+  <div class="font">
+    Main
+  </div>
+  <div class="font">
+    Events
+  </div>
+  <div class="font">
+    Join ukrainian mountains
+  </div>
+      </nav>
+	<header id="header1">
+    <p id="p1"><br /><br />
+      We are Ukraine</p>
+    <p id="p2">
+      Watch Now
+    </p>
+    </header>
+	<section id="section1">
+		<p id="yellowparagraph1">
+      Ukrainian Carpathians<br />
+      Within different regional and national traditions, there are several overlapping variants of divisions and designations<br /> for various Eastern Carpathian mountain ranges.<br />
+       Within the wider scope of the Ukrainian Carpathians, a section of the Outer Eastern Carpathians spaning southeastern corner<br /> of Poland, northeastern corner of Slovakia<br />
+        and western part of Ukraine is commonly known as the Eastern Beskids (Ukrainian: Східні Бескиди; Polish: Beskidy Wschodnie),<br /> while in Slovakia the term Meadowed Mountains<br />
+         (Slovak: Poloniny) is also used for the same mountain range.
+    </p>
+    <div class="FlexBox">
+		  <div class="orangebox-1"></div>
+		  <div class="orangebox-2"></div>
+    </div>
+    <p id="homyak"> Mountain Homyak</p>
+    <p id="goverla"> Mountain Goverla</p>
+	</section>
+	<div id="PreFooter1">
+    Want to know more about Ukraine?
+  </div>
+	<footer id="footer1"></br>
+    2021 Ukrainian Mountains
+  </footer>
+</body>
+</html>
